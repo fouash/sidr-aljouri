@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       },
     ],
     locale: "ar_SA",
-    type: "product",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",

@@ -124,7 +124,7 @@ export default function HomePage() {
               اختر المنتج المناسب لاحتياجاتك
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
             {[
               {
                 title: "السدر للشعر",
@@ -153,20 +153,6 @@ export default function HomePage() {
                 image: "/sidr-powder-mixing-bowl-preparation-natural.jpg",
                 link: "/sidr-recipes",
                 features: ["وصفات سهلة", "نتائج مضمونة", "مكونات طبيعية"],
-              },
-              {
-                title: "عسل السدر",
-                description: "عسل السدر الجبلي الأصلي",
-                image: "/natural-sidr-honey-jar.jpg",
-                link: "/sidr-honey",
-                features: ["فوائد صحية", "طعم مميز", "جودة عالية"],
-              },
-              {
-                title: "زيت السدر",
-                description: "زيت طبيعي للشعر والبشرة",
-                image: "/sidr-oil-bottle-natural.jpg",
-                link: "/sidr-oil",
-                features: ["ترطيب عميق", "تغذية مكثفة", "نتائج سريعة"],
               },
             ].map((product) => (
               <Card
@@ -198,6 +184,58 @@ export default function HomePage() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Usage Methods */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground text-balance">طرق استخدام السدر</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              طرق بسيطة وفعالة للاستفادة من فوائد السدر
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-border text-center">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Sparkles className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-foreground">ماسك للشعر</h3>
+                <p className="text-muted-foreground mb-4">اخلط السدر مع الماء وضعه على الشعر لمدة 30 دقيقة</p>
+                <Link href="/sidr-hair">
+                  <Button variant="outline" size="sm">اعرف المزيد</Button>
+                </Link>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-border text-center">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-foreground">ماسك للوجه</h3>
+                <p className="text-muted-foreground mb-4">اخلط السدر مع العسل وضعه على الوجه لمدة 15 دقيقة</p>
+                <Link href="/sidr-skin">
+                  <Button variant="outline" size="sm">اعرف المزيد</Button>
+                </Link>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-border text-center">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Droplet className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-foreground">شاي السدر</h3>
+                <p className="text-muted-foreground mb-4">انقع أوراق السدر في الماء المغلي واشرب يومياً</p>
+                <Link href="/sidr-body">
+                  <Button variant="outline" size="sm">اعرف المزيد</Button>
+                </Link>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

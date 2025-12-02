@@ -182,49 +182,36 @@ export default function SidrHairPage() {
               اختر المنتج المناسب لنوع شعرك
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {[
-              {
-                title: "سدر مطحون نقي",
-                price: "49 ريال",
-                features: ["100% طبيعي", "خالي من الإضافات", "للاستخدام الأسبوعي", "عبوة 250 جرام"],
-              },
-              {
-                title: "زيت السدر للشعر",
-                price: "79 ريال",
-                features: ["زيت نقي", "سريع الامتصاص", "للاستخدام اليومي", "عبوة 100 مل"],
-                featured: true,
-              },
-              {
-                title: "شامبو السدر الطبيعي",
-                price: "59 ريال",
-                features: ["تركيبة طبيعية", "خالي من الكبريتات", "للاستخدام اليومي", "عبوة 300 مل"],
-              },
-            ].map((product) => (
-              <Card
-                key={product.title}
-                className={`border-border relative ${product.featured ? "border-primary border-2 shadow-lg" : ""}`}
-              >
-                {product.featured && (
-                  <div className="absolute -top-3 right-1/2 translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-semibold">
-                    الأكثر مبيعاً
-                  </div>
-                )}
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2 text-foreground">{product.title}</h3>
-                  <div className="text-3xl font-bold text-primary mb-4">{product.price}</div>
-                  <ul className="space-y-2 mb-6">
-                    {product.features.map((feature) => (
-                      <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button className="w-full bg-primary hover:bg-primary/90">أضف للسلة</Button>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="border-border">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4 text-foreground">سدر مطحون نقي</h3>
+                <ul className="space-y-2 mb-6">
+                  {["100% طبيعي وعضوي", "خالي من المواد الكيميائية", "مطحون ناعماً للاستخدام السهل", "مناسب لجميع أنواع الشعر", "غني بالفيتامينات والمعادن"].map((feature) => (
+                    <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <Button className="w-full bg-primary hover:bg-primary/90">اطلب الآن</Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-border">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4 text-foreground">شامبو السدر الطبيعي</h3>
+                <ul className="space-y-2 mb-6">
+                  {["تركيبة طبيعية 100%", "خالي من الكبريتات والبارابين", "ينظف بلطف دون جفاف", "مناسب للاستخدام اليومي", "يحافظ على الزيوت الطبيعية"].map((feature) => (
+                    <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <Button className="w-full bg-primary hover:bg-primary/90">اطلب الآن</Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

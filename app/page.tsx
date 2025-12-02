@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "اكتشف منتجات السدر الطبيعية من سدر الجوري. عسل السدر الجبلي، زيت السدر للشعر، سدر مطحون، شامبو السدر الطبيعي. فوائد السدر للشعر والبشرة والجسم. منتجات طبيعية 100% بدون كيماويات",
   keywords:
-    "السدر، سدر، jujube، سدر الجوري، فوائد السدر، السدر للشعر، السدر للبشرة، عسل السدر، زيت السدر، سدر مطحون، شامبو السدر، النبق، شجرة السدر، منتجات طبيعية، sidr products, jujube benefits, ziziphus, jujube oil, jujube honey",
+    "السدر، سدر الجوري، jujube، ziziphus، فوائد السدر، السدر للشعر، السدر للبشرة، عسل السدر، زيت السدر، سدر مطحون، natural sidr، organic jujube، شامبو السدر، ماسك السدر، sidr mask، jujube oil، النبق، شجرة السدر، sidr tree، منتجات طبيعية، natural products، herbal care، العناية الطبيعية، السدر العضوي، السدر الأصلي، authentic sidr، السدر الجبلي، mountain sidr، فوائد النبق، jujube benefits، sidr honey، عسل النبق، السدر للصحة، health benefits، السدر للجمال، beauty care، traditional medicine، الطب البديل",
   openGraph: {
     title: "سدر الجوري - منتجات السدر الطبيعية",
     description: "عسل السدر الجبلي، زيت السدر، سدر مطحون ومنتجات طبيعية 100% للشعر والبشرة. Natural Jujube Products",
@@ -61,8 +61,7 @@ export default function HomePage() {
                 اكتشف قوة السدر الطبيعي
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                منتجات السدر الأصلية للعناية بالشعر والبشرة والجسم. استمتع بفوائد شجرة السدر المباركة التي استخدمت منذ
-                آلاف السنين
+                منتجات السدر الأصلية للعناية بـ<Link href="/sidr-hair" className="text-primary hover:underline">الشعر</Link> و<Link href="/sidr-skin" className="text-primary hover:underline">البشرة</Link> و<Link href="/sidr-body" className="text-primary hover:underline">الجسم</Link>. استمتع بـ<Link href="/sidr-benefits" className="text-primary hover:underline">فوائد شجرة السدر</Link> المباركة التي استخدمت منذ آلاف السنين
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 gap-2">
@@ -100,7 +99,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground text-balance">لماذا السدر الطبيعي؟</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              فوائد مذهلة لصحة الشعر والبشرة من الطبيعة مباشرة
+              فوائد مذهلة لصحة <Link href="/sidr-hair" className="text-primary hover:underline">الشعر</Link> و<Link href="/sidr-skin" className="text-primary hover:underline">البشرة</Link> من الطبيعة مباشرة. اكتشف <Link href="/sidr-recipes" className="text-primary hover:underline">وصفات السدر الطبيعية</Link>
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -133,6 +132,27 @@ export default function HomePage() {
                 image: "/sidr-powder-for-hair-care.jpg",
                 link: "/sidr-hair",
                 features: ["تقوية الجذور", "منع التساقط", "علاج القشرة"],
+              },
+              {
+                title: "السدر للبشرة",
+                description: "بشرة نضرة ومشرقة",
+                image: "/natural-skincare-sidr-face-mask-glowing-skin.jpg",
+                link: "/sidr-skin",
+                features: ["تنظيف عميق", "ترطيب طبيعي", "إشراق طبيعي"],
+              },
+              {
+                title: "السدر للجسم",
+                description: "صحة عامة وعافية طبيعية",
+                image: "/natural-sidr-tree-leaves-and-products-photography.jpg",
+                link: "/sidr-body",
+                features: ["تقوية المناعة", "تحسين الهضم", "تنظيف الجسم"],
+              },
+              {
+                title: "وصفات السدر",
+                description: "وصفات طبيعية مجربة",
+                image: "/sidr-powder-mixing-bowl-preparation-natural.jpg",
+                link: "/sidr-recipes",
+                features: ["وصفات سهلة", "نتائج مضمونة", "مكونات طبيعية"],
               },
               {
                 title: "عسل السدر",

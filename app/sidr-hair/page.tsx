@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "دليل شامل عن السدر للشعر: فوائد السدر للشعر، ماسك السدر للشعر، طريقة استخدام السدر للشعر، زيت السدر للشعر، سدر الشعر، مدة السدر على الشعر، شامبو السدر وورق السدر للشعر من سدر الجوري",
   keywords:
-    "السدر للشعر، فوائد السدر للشعر، ماسك السدر للشعر، طريقة السدر للشعر، زيت السدر للشعر، سدر الشعر، مدة السدر على الشعر، سدر مطحون، شامبو السدر، ورق سدر، أوراق السدر، ورق السدر الأخضر، كم مدة السدر على الشعر، jujube for hair, jujube hair mask, sidr for hair, ziziphus hair treatment, jujube oil for hair",
+    "السدر للشعر، فوائد السدر للشعر، ماسك السدر، sidr hair mask, jujube hair treatment, طريقة استخدام السدر، زيت السدر، سدر مطحون، شامبو السدر، natural hair care, organic shampoo, أوراق السدر، ورق السدر الأخضر، مدة السدر على الشعر، hair growth, hair loss treatment, السدر للتساقط، السدر للقشرة، dandruff treatment, السدر للكثافة، hair thickness, السدر لللمعان، hair shine, ziziphus spina-christi, jujube oil, sidr powder, herbal hair care, العناية الطبيعية بالشعر، الشعر الطبيعي، healthy hair, strong hair, السدر للشعر الجاف، dry hair treatment, السدر للشعر الدهني، oily hair treatment",
   openGraph: {
     title: "السدر للشعر - فوائد وطريقة الاستخدام | سدر الجوري",
     description:
@@ -60,7 +60,7 @@ export default function SidrHairPage() {
                 السدر للشعر: سر الجمال الطبيعي
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                اكتشف فوائد السدر المذهلة لشعرك. يقوي الجذور، يمنع التساقط، ويمنح شعرك لمعاناً وكثافة طبيعية
+                اكتشف <Link href="/sidr-benefits" className="text-primary hover:underline">فوائد السدر المذهلة</Link> لشعرك. يقوي الجذور، يمنع التساقط، ويمنح شعرك لمعاناً وكثافة طبيعية. جرب <Link href="/sidr-recipes" className="text-primary hover:underline">وصفات السدر الطبيعية</Link>
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90 gap-2">
                 اطلب منتجات السدر للشعر
@@ -265,6 +265,27 @@ export default function SidrHairPage() {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Links */}
+      <section className="py-12 bg-muted/20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-8 text-foreground">مواضيع ذات صلة</h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <Link href="/sidr-skin" className="block p-4 bg-background rounded-lg border hover:border-primary transition-colors">
+              <h3 className="font-semibold text-foreground mb-2">السدر للبشرة</h3>
+              <p className="text-sm text-muted-foreground">عناية طبيعية لبشرة نضرة</p>
+            </Link>
+            <Link href="/sidr-recipes" className="block p-4 bg-background rounded-lg border hover:border-primary transition-colors">
+              <h3 className="font-semibold text-foreground mb-2">وصفات السدر</h3>
+              <p className="text-sm text-muted-foreground">ماسكات ووصفات طبيعية</p>
+            </Link>
+            <Link href="/sidr-body" className="block p-4 bg-background rounded-lg border hover:border-primary transition-colors">
+              <h3 className="font-semibold text-foreground mb-2">السدر للجسم</h3>
+              <p className="text-sm text-muted-foreground">فوائد صحية عامة</p>
+            </Link>
           </div>
         </div>
       </section>

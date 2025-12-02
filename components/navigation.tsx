@@ -8,6 +8,8 @@ import { useState } from "react"
 const navLinks = [
   { href: "/sidr-hair", label: "السدر للشعر" },
   { href: "/sidr-skin", label: "السدر للبشرة" },
+  { href: "/sidr-body", label: "السدر للجسم" },
+  { href: "/sidr-recipes", label: "وصفات السدر" },
   { href: "/sidr-honey", label: "عسل السدر" },
   { href: "/sidr-oil", label: "زيت السدر" },
   { href: "/sidr-benefits", label: "فوائد السدر" },

@@ -4,6 +4,7 @@ import { CTASection } from "@/components/cta-section"
 import { Card, CardContent } from "@/components/ui/card"
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Clock, Users, Star, CheckCircle2, Sparkles, Heart, Droplet, Sun } from "lucide-react"
 

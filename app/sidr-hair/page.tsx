@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles, Droplet, Shield, Clock, CheckCircle2, ArrowLeft, Leaf } from "lucide-react"
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "السدر للشعر - فوائد السدر للشعر وطريقة الاستخدام",
@@ -197,7 +198,7 @@ export default function SidrHairPage() {
                 <Button className="w-full bg-primary hover:bg-primary/90">اطلب الآن</Button>
               </CardContent>
             </Card>
-            
+
             <Card className="border-border">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-foreground">شامبو السدر الطبيعي</h3>

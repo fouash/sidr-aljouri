@@ -5,6 +5,7 @@ import { BenefitCard } from "@/components/benefit-card"
 import { Card, CardContent } from "@/components/ui/card"
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Leaf, Heart, Shield, Sparkles, Droplet, Sun, CheckCircle2 } from "lucide-react"
 
